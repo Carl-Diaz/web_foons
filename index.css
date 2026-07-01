@@ -73,22 +73,22 @@ body {
   background: var(--negro);
 }
 
-.concepto__hover-overlay {
+.concepto__capa-hover {
   position: absolute;
   inset: 0;
   opacity: 0;
   transition: opacity var(--transicion);
 }
 
-.concepto--restaurante .concepto__hover-overlay {
+.concepto--restaurante .concepto__capa-hover {
   background: var(--amarillo-oscuro);
 }
 
-.concepto--carbon .concepto__hover-overlay {
+.concepto--carbon .concepto__capa-hover {
   background: #1a1a1a;
 }
 
-.concepto:hover .concepto__hover-overlay {
+.concepto:hover .concepto__capa-hover {
   opacity: 1;
 }
 
@@ -117,7 +117,7 @@ body {
 }
 
 /* LOGO PLACEHOLDER */
-.concepto__logo-placeholder {
+.concepto__logotipo-marcador {
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -128,18 +128,18 @@ body {
   border: 3px solid currentColor;
 }
 
-.concepto--restaurante .concepto__logo-placeholder {
+.concepto--restaurante .concepto__logotipo-marcador {
   background: var(--negro);
   color: var(--amarillo);
 }
 
-.concepto--carbon .concepto__logo-placeholder {
+.concepto--carbon .concepto__logotipo-marcador {
   background: transparent;
   color: var(--amarillo);
   border-color: var(--amarillo);
 }
 
-.concepto__logo-placeholder img {
+.concepto__logotipo-marcador img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -253,7 +253,7 @@ body {
    FOOTER
    ============================================= */
 
-.footer {
+.pie-pagina {
   height: 40px;
   background: var(--negro);
   display: flex;
@@ -262,7 +262,7 @@ body {
   border-top: 1px solid rgba(255,255,255,0.06);
 }
 
-.footer p {
+.pie-pagina p {
   font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.25);
   letter-spacing: 0.05em;

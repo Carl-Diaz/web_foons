@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const conceptos = document.querySelectorAll('.concepto');
 
-    // Efecto: cuando haces hover en un lado, el otro se oscurece levemente
+    // Efectos: hover, teclado y feedback táctil
     conceptos.forEach(concepto => {
         concepto.addEventListener('mouseenter', () => {
             conceptos.forEach(otro => {
@@ -30,10 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 window.location.href = concepto.getAttribute('href');
             }
         });
-    });
 
-    // Soporte táctil — feedback visual en móvil
-    conceptos.forEach(concepto => {
         concepto.addEventListener('touchstart', () => {
             concepto.style.filter = 'brightness(0.9)';
         }, { passive: true });
