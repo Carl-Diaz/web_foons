@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foons Restaurante</title>
+    <link rel="stylesheet" href="./foons_restaurante.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="encabezado" id="inicio">
+      <div class="barra">
+        <a class="logo" href="../index.html">
+          <img src="../img/foons_restaurante_logo.png" alt="Foons Restaurante" />
+        </a>
+
+        <nav class="menu" id="menu">
+          <ul class="lista">
+            <li><a href="#carta">Carta</a></li>
+            <li><a href="#pedidos">Pedidos</a></li>
+            <li><a href="#quienes">¿Quiénes somos?</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#reservas">Reservas</a></li>
+          </ul>
+        </nav>
+
+        <a class="btn btn--whatsapp" href="#pedidos">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.553 4.122 1.523 5.855L.057 23.885l6.195-1.624A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.89 9.89 0 01-5.031-1.375l-.361-.214-3.737.979 1.004-3.648-.235-.374A9.869 9.869 0 012.106 12C2.106 6.53 6.53 2.106 12 2.106S21.894 6.53 21.894 12 17.47 21.894 12 21.894z"/>
+          </svg>
+          <span>Pedir ahora</span>
+        </a>
+
+        <button class="menu-btn" id="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-contenido">
+        <p class="eyebrow">Bienvenido a</p>
+        <h1>Foons<br />Restaurante</h1>
+        <p class="hero-texto">Sabores del mundo en un solo lugar</p>
+        <div class="acciones">
+          <a href="#carta" class="btn">Ver carta</a>
+          <a href="#pedidos" class="btn btn--whatsapp">Hacer pedido</a>
+        </div>
+      </div>
+      <div class="hero-fondo"></div>
+    </section>
+
+    <section class="seccion seccion--gris" id="carta">
+      <div class="contenedor">
+        <h2>Nuestra Carta</h2>
+        <p class="subtitulo">Elige tu categoría favorita</p>
+
+        <div class="tabs" role="tablist" aria-label="Categorías de menú">
+          <button class="tab active" data-categoria="entradas" role="tab">Entradas</button>
+          <button class="tab" data-categoria="hamburguesas" role="tab">Hamburguesas</button>
+          <button class="tab" data-categoria="salchipapas" role="tab">Salchipapas</button>
+          <button class="tab" data-categoria="bebidas" role="tab">Bebidas</button>
+          <button class="tab" data-categoria="postres" role="tab">Postres</button>
+        </div>
+
+        <div class="productos">
+          <div class="grupo active" data-grupo="entradas">
+            <article class="producto" data-nombre="Salchipapa" data-descripcion="Salchipapa clásica con papas fritas y salchicha al estilo casero." data-precio="$22.000" data-imagen="./img_restaurante/salchipapa.jpg">
+              <div class="producto-imagen"><img src="./img_restaurante/salchipapa.jpg" alt="Salchipapa" onerror="this.closest('.producto-imagen').classList.add('sin-imagen')" /></div>
+              <div class="producto-info">
+                <h3>Salchipapa</h3>
+                <p>Salchipapa clásica con papas fritas y salchicha al estilo casero.</p>
+                <div class="producto-footer">
+                  <span>$22.000</span>
+                  <button class="btn btn--small ver-btn" type="button">Ver</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="producto" data-nombre="Patacones con hogao" data-descripcion="Patacones dorados acompañados de hogao casero y queso costeño rallado." data-precio="$14.000" data-imagen="img/menu/patacones.jpg">
+              <div class="producto-imagen"><img src="img/menu/patacones.jpg" alt="Patacones con hogao" onerror="this.closest('.producto-imagen').classList.add('sin-imagen')" /></div>
+              <div class="producto-info">
+                <h3>Patacones con hogao</h3>
+                <p>Patacones dorados acompañados de hogao casero y queso costeño rallado.</p>
+                <div class="producto-footer">
+                  <span>$14.000</span>
+                  <button class="btn btn--small ver-btn" type="button">Ver</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="grupo" data-grupo="hamburguesas">
+            <article class="producto" data-nombre="Hamburguesa Clásica" data-descripcion="Carne de res 150g, lechuga, tomate, cebolla caramelizada, pepinillos y salsa especial de la casa." data-precio="$28.000" data-imagen="img/menu/hamburguesa-clasica.jpg">
+              <div class="producto-imagen"><img src="img/menu/hamburguesa-clasica.jpg" alt="Hamburguesa Clásica" onerror="this.closest('.producto-imagen').classList.add('sin-imagen')" /></div>
+              <div class="producto-info">
+                <h3>Hamburguesa Clásica</h3>
+                <p>Carne de res 150g, lechuga, tomate, cebolla caramelizada, pepinillos y salsa especial de la casa.</p>
+                <div class="producto-footer">
+                  <span>$28.000</span>
+                  <button class="btn btn--small ver-btn" type="button">Ver</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="grupo" data-grupo="salchipapas">
+            <article class="producto" data-nombre="Salchipapa Clásica" data-descripcion="Papas fritas crocantes con salchicha alemana en rodajas." data-precio="$18.000" data-imagen="img/menu/salchipapa-clasica.jpg">
+              <div class="producto-imagen"><img src="img/menu/salchipapa-clasica.jpg" alt="Salchipapa Clásica" onerror="this.closest('.producto-imagen').classList.add('sin-imagen')" /></div>
+              <div class="producto-info">
+                <h3>Salchipapa Clásica</h3>
+                <p>Papas fritas crocantes con salchicha alemana en rodajas. Acompañada de salsas a elección.</p>
+                <div class="producto-footer">
+                  <span>$18.000</span>
+                  <button class="btn btn--small ver-btn" type="button">Ver</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="grupo" data-grupo="bebidas">
+            <article class="producto" data-nombre="Limonada de coco" data-descripcion="Limonada natural con leche de coco, hielo y un toque de menta." data-precio="$10.000" data-imagen="img/menu/limonada-coco.jpg">
+              <div class="producto-imagen"><img src="img/menu/limonada-coco.jpg" alt="Limonada de coco" onerror="this.closest('.producto-imagen').classList.add('sin-imagen')" /></div>
+              <div class="producto-info">
+                <h3>Limonada de coco</h3>
+                <p>Limonada natural con leche de coco, hielo y un toque de menta. Refrescante y cremosa.</p>
+                <div class="producto-footer">
+                  <span>$10.000</span>
+                  <button class="btn btn--small ver-btn" type="button">Ver</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="grupo" data-grupo="postres">
+            <article class="producto" data-nombre="Brownie con helado" data-descripcion="Brownie de chocolate artesanal tibio, acompañado de helado y salsa de caramelo." data-precio="$15.000" data-imagen="img/menu/brownie.jpg">
+              <div class="producto-imagen"><img src="img/menu/brownie.jpg" alt="Brownie con helado" onerror="this.closest('.producto-imagen').classList.add('sin-imagen')" /></div>
+              <div class="producto-info">
+                <h3>Brownie con helado</h3>
+                <p>Brownie de chocolate artesanal tibio, acompañado de una bola de helado de vainilla y salsa de caramelo.</p>
+                <div class="producto-footer">
+                  <span>$15.000</span>
+                  <button class="btn btn--small ver-btn" type="button">Ver</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Detalle del producto">
+      <div class="modal-fondo" id="modal-fondo"></div>
+      <div class="modal-caja">
+        <button class="modal-cerrar" id="modal-cerrar" type="button" aria-label="Cerrar">✕</button>
+        <div class="modal-imagen" id="modal-imagen"></div>
+        <div class="modal-contenido">
+          <h3 id="modal-titulo"></h3>
+          <p id="modal-descripcion"></p>
+          <p id="modal-precio"></p>
+          <a class="btn btn--whatsapp" id="modal-pedir" href="https://wa.me/573225234154" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="seccion seccion--oscura" id="pedidos">
+      <div class="contenedor contenedor--corto">
+        <h2>Haz tu pedido</h2>
+        <p class="subtitulo subtitulo--claro">Llena el formulario y te contactamos por WhatsApp</p>
+
+        <div class="formulario">
+          <div class="campo">
+            <label for="nombre">Tu nombre</label>
+            <input type="text" id="nombre" placeholder="¿Cómo te llamas?" />
+          </div>
+          <div class="campo">
+            <label for="direccion">Dirección de entrega</label>
+            <input type="text" id="direccion" placeholder="Calle, barrio, referencia..." />
+          </div>
+          <div class="campo">
+            <label for="pago">Método de pago</label>
+            <select id="pago">
+              <option value="">Selecciona...</option>
+              <option value="Efectivo">Efectivo</option>
+              <option value="Nequi">Nequi</option>
+              <option value="Daviplata">Daviplata</option>
+              <option value="Transferencia">Transferencia bancaria</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="pedido">¿Qué vas a pedir?</label>
+            <textarea id="pedido" rows="4" placeholder="Ej: 1 Hamburguesa BBQ, 1 Salchipapa Clásica, 1 Limonada de coco..."></textarea>
+          </div>
+          <button class="btn btn--block" id="boton-pedido" type="button">Enviar pedido por WhatsApp</button>
+          <p class="nota" id="nota"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="quienes">
+      <div class="contenedor contenedor--corto">
+        <h2>¿Quiénes somos?</h2>
+        <p class="texto">Somos Foons Restaurante, un espacio dedicado a traerte los mejores sabores del mundo en un ambiente cálido y familiar.</p>
+        <p class="texto">Ubicados en Fonseca, La Guajira, nos enorgullece ser parte de la comunidad y ofrecer siempre ingredientes frescos, atención cercana y precios justos.</p>
+      </div>
+    </section>
+
+    <section class="seccion" id="ubicacion">
+      <div class="contenedor">
+        <h2>¿Dónde estamos?</h2>
+        <div class="grid-ubicacion">
+          <div class="info-ubicacion">
+            <div class="dato">
+              <span>📍</span>
+              <div>
+                <strong>Dirección</strong>
+                <p>Fonseca, La Guajira, Colombia</p>
+              </div>
+            </div>
+            <div class="dato">
+              <span>🕐</span>
+              <div>
+                <strong>Horarios</strong>
+                <p>Lunes a Sábado: 11:00 am – 10:00 pm</p>
+                <p>Domingos: 12:00 pm – 9:00 pm</p>
+              </div>
+            </div>
+            <div class="dato">
+              <span>📱</span>
+              <div>
+                <strong>WhatsApp</strong>
+                <p><a href="https://wa.me/573225234154" target="_blank" rel="noopener">322 523 4154</a></p>
+              </div>
+            </div>
+            <a href="https://maps.google.com/?q=Fonseca,La+Guajira,Colombia" target="_blank" rel="noopener" class="btn">Abrir en Google Maps</a>
+          </div>
+          <div class="mapa">
+            <iframe src="https://maps.google.com/maps?q=Fonseca,La+Guajira,Colombia&output=embed" width="100%" height="320" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--oscura" id="reservas">
+      <div class="contenedor contenedor--corto">
+        <h2>Reservas</h2>
+        <p class="subtitulo subtitulo--claro">¿Vienes con grupo? Resérvanos una mesa por WhatsApp y te esperamos listos.</p>
+        <a href="https://wa.me/573225234154?text=Hola%20Foons%20Restaurante%2C%20quisiera%20hacer%20una%20reserva." target="_blank" rel="noopener" class="btn btn--whatsapp btn--block">Reservar por WhatsApp</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="footer-grid">
+          <div>
+            <img src="../img/foons_restaurante_logo.png" alt="Foons Restaurante" class="logo-footer" />
+            <p>Sabores del mundo en un solo lugar.</p>
+          </div>
+          <div>
+            <strong>Navegación</strong>
+            <ul class="footer-lista">
+              <li><a href="#carta">Carta</a></li>
+              <li><a href="#pedidos">Pedidos</a></li>
+              <li><a href="#quienes">¿Quiénes somos?</a></li>
+              <li><a href="#ubicacion">Ubicación</a></li>
+              <li><a href="#reservas">Reservas</a></li>
+            </ul>
+          </div>
+          <div>
+            <strong>Contacto</strong>
+            <ul class="footer-lista">
+              <li><a href="https://wa.me/573225234154" target="_blank" rel="noopener">WhatsApp: 322 523 4154</a></li>
+              <li>Fonseca, La Guajira</li>
+            </ul>
+          </div>
+        </div>
+        <p class="copy">© 2026 Foons Restaurante · Todos los derechos reservados</p>
+      </div>
+    </footer>
+
+    <script src="./foons-restaurante.js"></script>
+  </body>
+</html>

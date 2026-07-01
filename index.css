@@ -1,0 +1,351 @@
+/* =============================================
+   FOONS — INDEX SELECTOR
+   Paleta: Amarillo #F5C518 | Rojo #C0392B | Negro #111111 | Blanco #FFFFFF
+   ============================================= */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --amarillo: #F5C518;
+  --amarillo-oscuro: #D4A800;
+  --rojo: #C0392B;
+  --rojo-oscuro: #992D22;
+  --negro: #111111;
+  --blanco: #FFFFFF;
+  --fuente-display: 'Bebas Neue', sans-serif;
+  --fuente-cuerpo: 'Inter', sans-serif;
+  --transicion: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--fuente-cuerpo);
+  background: var(--negro);
+  display: flex;
+  flex-direction: column;
+}
+
+/* =============================================
+   SELECTOR PRINCIPAL
+   ============================================= */
+
+.selector {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 40px);
+  position: relative;
+}
+
+/* =============================================
+   CADA CONCEPTO
+   ============================================= */
+
+.concepto {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.concepto__fondo {
+  position: absolute;
+  inset: 0;
+  transition: transform var(--transicion);
+}
+
+.concepto--restaurante .concepto__fondo {
+  background: var(--amarillo);
+}
+
+.concepto--carbon .concepto__fondo {
+  background: var(--negro);
+}
+
+.concepto__hover-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity var(--transicion);
+}
+
+.concepto--restaurante .concepto__hover-overlay {
+  background: var(--amarillo-oscuro);
+}
+
+.concepto--carbon .concepto__hover-overlay {
+  background: #1a1a1a;
+}
+
+.concepto:hover .concepto__hover-overlay {
+  opacity: 1;
+}
+
+.concepto:hover .concepto__fondo {
+  transform: scale(1.03);
+}
+
+/* =============================================
+   CONTENIDO CENTRADO
+   ============================================= */
+
+.concepto__contenido {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 0.5rem;
+  transition: transform var(--transicion);
+}
+
+.concepto:hover .concepto__contenido {
+  transform: translateY(-6px);
+}
+
+/* LOGO PLACEHOLDER */
+.concepto__logo-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border: 3px solid currentColor;
+}
+
+.concepto--restaurante .concepto__logo-placeholder {
+  background: var(--negro);
+  color: var(--amarillo);
+}
+
+.concepto--carbon .concepto__logo-placeholder {
+  background: transparent;
+  color: var(--amarillo);
+  border-color: var(--amarillo);
+}
+
+.concepto__logo-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* NOMBRE */
+.concepto__subtitulo {
+  font-family: var(--fuente-display);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.concepto--restaurante .concepto__subtitulo {
+  color: var(--negro);
+}
+
+.concepto--carbon .concepto__subtitulo {
+  color: var(--blanco);
+}
+
+/* DESCRIPCIÓN */
+.concepto__descripcion {
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 0.25rem;
+}
+
+.concepto--restaurante .concepto__descripcion {
+  color: rgba(17, 17, 17, 0.6);
+}
+
+.concepto--carbon .concepto__descripcion {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* BOTÓN */
+.concepto__boton {
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: background var(--transicion), color var(--transicion), transform 0.2s;
+}
+
+.concepto--restaurante .concepto__boton {
+  background: var(--negro);
+  color: var(--amarillo);
+}
+
+.concepto--carbon .concepto__boton {
+  background: var(--amarillo);
+  color: var(--negro);
+}
+
+.concepto:hover .concepto__boton {
+  transform: scale(1.05);
+}
+
+/* =============================================
+   DIVISOR CENTRAL
+   ============================================= */
+
+.divisor {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  width: 48px;
+}
+
+.divisor__linea {
+  flex: 1;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.divisor__icono {
+  width: 48px;
+  height: 48px;
+  background: var(--negro);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.3);
+  flex-shrink: 0;
+}
+
+.divisor__icono svg {
+  width: 20px;
+  height: 20px;
+  transform: rotate(90deg);
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+
+.footer {
+  height: 40px;
+  background: var(--negro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.footer p {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.25);
+  letter-spacing: 0.05em;
+}
+
+/* =============================================
+   RESPONSIVE — CELULAR
+   ============================================= */
+
+@media (max-width: 640px) {
+  html, body {
+    overflow: auto;
+  }
+
+  .selector {
+    flex-direction: column;
+    height: auto;
+    min-height: calc(100vh - 40px);
+  }
+
+  .concepto {
+    min-height: 50vh;
+    flex: none;
+  }
+
+  .divisor {
+    position: relative;
+    left: auto;
+    top: auto;
+    bottom: auto;
+    transform: none;
+    flex-direction: row;
+    width: 100%;
+    height: 48px;
+    pointer-events: none;
+  }
+
+  .divisor__linea {
+    flex: 1;
+    width: auto;
+    height: 2px;
+  }
+
+  .divisor__icono {
+    transform: rotate(90deg);
+  }
+}
+
+/* =============================================
+   ANIMACIÓN DE ENTRADA
+   ============================================= */
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.concepto--restaurante {
+  animation: fadeInLeft 0.6s ease both;
+}
+
+.concepto--carbon {
+  animation: fadeInRight 0.6s ease 0.15s both;
+}
+
+.divisor {
+  animation: fadeIn 0.6s ease 0.3s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .concepto--restaurante,
+  .concepto--carbon,
+  .divisor {
+    animation: none;
+  }
+}
