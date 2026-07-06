@@ -11,11 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const ventanaDescripcion = document.getElementById('ventana-descripcion');
   const ventanaPrecio = document.getElementById('ventana-precio');
   const ventanaImagen = document.getElementById('ventana-imagen');
-  const ventanaPedir = document.getElementById('ventana-pedir');
   const botonPedido = document.getElementById('boton-pedido');
   const nota = document.getElementById('nota');
   const botonReserva = document.getElementById('boton-reserva');
   const notaReserva = document.getElementById('nota-reserva');
+  const ventanaBotonTopping = document.getElementById('ventana-boton-topping');
+  const ventanaToppings = document.getElementById('ventana-toppings');
 
   const convertirHoraReserva = (textoHora) => {
     const horaLimpia = textoHora.trim().toUpperCase();
@@ -32,6 +33,20 @@ document.addEventListener('DOMContentLoaded', () => {
       minutosTotales: hora24 * 60 + minuto,
       formato: `${hora12}:${String(minuto).padStart(2, '0')} ${periodo}`,
     };
+  };
+
+  const obtenerToppings = (nombreGrupo) => {
+    const grupo = document.querySelector(`[data-grupo="${nombreGrupo}"]`);
+    if (!grupo) return [];
+    return Array.from(grupo.querySelectorAll('.producto')).map((producto) => ({
+      nombre: producto.dataset.nombre || '',
+      precio: producto.dataset.precio || '',
+    }));
+  };
+
+  const mapaToppings = {
+    hamburguesas: 'toppings-burger',
+    salchipapas: 'topings-salchipapa',
   };
 
   const alternarNavegacion = () => {
@@ -70,7 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
     ventanaTitulo.textContent = producto.dataset.nombre || 'Producto';
     ventanaDescripcion.textContent = producto.dataset.descripcion || 'Sin descripción disponible.';
     ventanaPrecio.textContent = producto.dataset.precio || '';
-    ventanaPedir.href = `https://wa.me/573225234154?text=Hola%20Foons%20Restaurante%2C%20quiero%20pedir%20${encodeURIComponent(producto.dataset.nombre || '')}`;
 
     ventanaImagen.innerHTML = '';
     const imagen = producto.dataset.imagen;
@@ -86,6 +100,21 @@ document.addEventListener('DOMContentLoaded', () => {
       ventanaImagen.innerHTML = '<span style="font-size: 2.2rem;">🍽️</span>';
     }
 
+    const grupoProducto = producto.closest('.grupo');
+    const categoriaProducto = grupoProducto?.dataset.grupo;
+    const grupoToppingsRelacionado = mapaToppings[categoriaProducto];
+
+    ventanaToppings.innerHTML = '';
+    ventanaToppings.style.display = 'none';
+    ventanaBotonTopping.dataset.grupoTopping = grupoToppingsRelacionado || '';
+
+    if (grupoToppingsRelacionado) {
+      ventanaBotonTopping.style.display = 'inline-flex';
+      ventanaBotonTopping.textContent = 'Ver topping';
+    } else {
+      ventanaBotonTopping.style.display = 'none';
+    }
+
     ventana.classList.add('abierta');
     document.body.style.overflow = 'hidden';
   };
@@ -93,11 +122,38 @@ document.addEventListener('DOMContentLoaded', () => {
   const cerrarModal = () => {
     ventana?.classList.remove('abierta');
     document.body.style.overflow = '';
+    ventanaToppings.style.display = 'none';
+    ventanaToppings.innerHTML = '';
+    ventanaBotonTopping.textContent = 'Ver topping';
   };
 
   botonesVer.forEach((btn) => btn.addEventListener('click', () => abrirModal(btn)));
   ventanaFondo?.addEventListener('click', cerrarModal);
   ventanaCerrar?.addEventListener('click', cerrarModal);
+
+  ventanaBotonTopping?.addEventListener('click', () => {
+    const grupoTopping = ventanaBotonTopping.dataset.grupoTopping;
+    if (!grupoTopping) return;
+
+    const visible = ventanaToppings.style.display === 'grid';
+    if (visible) {
+      ventanaToppings.style.display = 'none';
+      ventanaBotonTopping.textContent = 'Ver topping';
+      return;
+    }
+
+    if (!ventanaToppings.children.length) {
+      obtenerToppings(grupoTopping).forEach(({ nombre, precio }) => {
+        const li = document.createElement('li');
+        li.innerHTML = `<span class="ventana-topping-nombre">${nombre}</span><span class="ventana-topping-precio">${precio}</span>`;
+        ventanaToppings.appendChild(li);
+      });
+    }
+
+    ventanaToppings.style.display = 'grid';
+    ventanaBotonTopping.textContent = 'Ocultar topping';
+  });
+
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') cerrarModal();
   });
@@ -105,15 +161,20 @@ document.addEventListener('DOMContentLoaded', () => {
   botonPedido?.addEventListener('click', () => {
     const nombre = document.getElementById('nombre').value.trim();
     const direccion = document.getElementById('direccion').value.trim();
+    const telefono = document.getElementById('telefono').value.trim();
     const pago = document.getElementById('pago').value;
     const pedido = document.getElementById('pedido').value.trim();
 
-    if (!nombre || !direccion || !pago || !pedido) {
+    if (!nombre || !direccion || !pago || !pedido || !telefono) {
       nota.textContent = 'Completa todos los campos para enviar tu pedido.';
       return;
     }
+    if (telefono.length !== 10) {
+      nota.textContent = 'El número de teléfono debe tener 10 caracteres';
+      return;
+    }
 
-    const mensaje = `Hola Foons Restaurante, quiero hacer un pedido.%0A%0ANombre: ${encodeURIComponent(nombre)}%0ADirección: ${encodeURIComponent(direccion)}%0APago: ${encodeURIComponent(pago)}%0APedido: ${encodeURIComponent(pedido)}`;
+    const mensaje = `Hola Foons Restaurante, quiero hacer un pedido.%0A%0ANombre: ${encodeURIComponent(nombre)}%0ATeléfono: ${encodeURIComponent(telefono)}%0ADirección: ${encodeURIComponent(direccion)}%0APago: ${encodeURIComponent(pago)}%0APedido: ${encodeURIComponent(pedido)}`;
     window.open(`https://wa.me/573225234154?text=${mensaje}`, '_blank', 'noopener');
     nota.textContent = 'Se abrió tu pedido en WhatsApp.';
   });
