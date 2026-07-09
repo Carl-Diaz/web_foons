@@ -24,8 +24,8 @@
           <li><a href="#reservas">Reservas</a></li>
           <li><a href="#ubicacion">Ubicación</a></li>
           <li><a href="#quienes">¿Quiénes somos?</a></li>
-          
-          
+
+
         </ul>
       </nav>
 
@@ -73,7 +73,10 @@
         <button class="pestana" data-categoria="sandwich" role="tab">Sandwich</button>
         <button class="pestana" data-categoria="pizzas" role="tab">Pizzas</button>
         <button class="pestana" data-categoria="asados" role="tab">Asados</button>
-        <button class="pestana" data-categoria="desgranados-y-mas" role="tab">Desgranados y mas</button>
+        <button class="pestana" data-categoria="desgranados" role="tab">Desgranados</button>
+        <button class="pestana" data-categoria="Alitas" role="tab">Alitas</button>
+        <button class="pestana" data-categoria="crepes" role="tab">Crepes</button>
+        <button class="pestana" data-categoria="mexicana" role="tab">mexicana</button>
         <button class="pestana" data-categoria="bebidas" role="tab">Bebidas</button>
       </div>
 
@@ -1295,7 +1298,7 @@
           </article>
         </div>
 
-        <div class="grupo" data-grupo="desgranados-y-mas">
+        <div class="grupo" data-grupo="desgranados">
           <article class="producto" data-nombre="Desgranado Foons"
             data-descripcion="Pechuga a la plancha, lomo fino a la plancha, maiz tierno, queso mozzarella fundido, salsas y papa ripio. Pidelo con bollo o con papa."
             data-precio="$25.000" data-imagen="">
@@ -1340,6 +1343,11 @@
               </div>
             </div>
           </article>
+        </div>
+
+        <div class="grupo" data-grupo="Alitas">
+          
+          
 
           <article class="producto" data-nombre="Alitas (x6)"
             data-descripcion="Alitas con salsa chipotle, miel mostaza, BBQ y sriracha." data-precio="$15.000"
@@ -1383,6 +1391,12 @@
             </div>
           </article>
 
+        </div>
+
+        <div class="grupo" data-grupo="crepes">
+          
+
+
           <article class="producto" data-nombre="Crepe de pollo"
             data-descripcion="Tortilla blanda rellena de pechuga de pollo en salsa bechamel de la casa, con queso mozzarella y gratinado con parmesano, acompanada con pan de ajo y perejil."
             data-precio="$22.000" data-imagen="">
@@ -1412,6 +1426,19 @@
               </div>
             </div>
           </article>
+
+          
+          
+        </div>
+
+
+
+
+
+
+
+        <div class="grupo" data-grupo="mexicana">
+        
 
           <article class="producto" data-nombre="Tacos"
             data-descripcion="3 tortillas suaves con la proteina de tu preferencia (carne, pollo o cerdo), acompanadas de guacamole, pico de gallo, salsa de la casa y nachos triturados."
@@ -1460,6 +1487,32 @@
         </div>
 
         <div class="grupo" data-grupo="bebidas">
+          <article class="producto" data-nombre="Michelada tradicional (adicional)"
+            data-descripcion="Convierte tu cerveza en michelada tradicional." data-precio="+$2.000" data-imagen="">
+            <div class="producto-imagen sin-imagen"></div>
+            <div class="producto-info">
+              <h3>Michelada tradicional (adicional)</h3>
+              <p>Convierte tu cerveza en michelada tradicional.</p>
+              <div class="producto-footer">
+                <span>+$2.000</span>
+                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto" data-nombre="Agua normal" data-descripcion="Botella de agua." data-precio="$3.000"
+            data-imagen="">
+            <div class="producto-imagen sin-imagen"></div>
+            <div class="producto-info">
+              <h3>Agua normal</h3>
+              <p>Botella de agua.</p>
+              <div class="producto-footer">
+                <span>$3.000</span>
+                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
+              </div>
+            </div>
+          </article>
+
           <article class="producto" data-nombre="Gaseosas personales"
             data-descripcion="Coca-Cola, Quatro, Kola Román, Sprite o Ginger en presentación personal."
             data-precio="$4.000" data-imagen="">
@@ -1486,6 +1539,35 @@
               </div>
             </div>
           </article>
+
+          
+          <article class="producto" data-nombre="Agua saborizada" data-descripcion="Agua sabor manzana maracuyá."
+            data-precio="$4.000" data-imagen="">
+            <div class="producto-imagen sin-imagen"></div>
+            <div class="producto-info">
+              <h3>Agua saborizada</h3>
+              <p>Agua sabor manzana maracuyá.</p>
+              <div class="producto-footer">
+                <span>$4.000</span>
+                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
+              </div>
+            </div>
+          </article>
+
+           <article class="producto" data-nombre="Cerveza"
+            data-descripcion="Águila, Águila Light, Club Colombia, Heineken, Coronita o Poker." data-precio="$5.000"
+            data-imagen="">
+            <div class="producto-imagen sin-imagen"></div>
+            <div class="producto-info">
+              <h3>Cerveza</h3>
+              <p>Águila, Águila Light, Club Colombia, Heineken, Coronita o Poker.</p>
+              <div class="producto-footer">
+                <span>$5.000</span>
+                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
+              </div>
+            </div>
+          </article>
+
 
           <article class="producto" data-nombre="Gaseosa litro y medio"
             data-descripcion="Coca-Cola, Quatro, Kola Román, Sprite o Ginger en presentación de 1.5 L."
@@ -1515,58 +1597,11 @@
             </div>
           </article>
 
-          <article class="producto" data-nombre="Cerveza"
-            data-descripcion="Águila, Águila Light, Club Colombia, Heineken, Coronita o Poker." data-precio="$5.000"
-            data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Cerveza</h3>
-              <p>Águila, Águila Light, Club Colombia, Heineken, Coronita o Poker.</p>
-              <div class="producto-footer">
-                <span>$5.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
+         
+          
 
-          <article class="producto" data-nombre="Michelada tradicional (adicional)"
-            data-descripcion="Convierte tu cerveza en michelada tradicional." data-precio="+$2.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Michelada tradicional (adicional)</h3>
-              <p>Convierte tu cerveza en michelada tradicional.</p>
-              <div class="producto-footer">
-                <span>+$2.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
+          
 
-          <article class="producto" data-nombre="Agua normal" data-descripcion="Botella de agua." data-precio="$3.000"
-            data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Agua normal</h3>
-              <p>Botella de agua.</p>
-              <div class="producto-footer">
-                <span>$3.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Agua saborizada" data-descripcion="Agua sabor manzana maracuyá."
-            data-precio="$4.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Agua saborizada</h3>
-              <p>Agua sabor manzana maracuyá.</p>
-              <div class="producto-footer">
-                <span>$4.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
 
           <article class="producto" data-nombre="Soda frutos rojos"
             data-descripcion="Soda michelada con perlas explosivas de frutos rojos." data-precio="$12.000"
@@ -1637,6 +1672,19 @@
             </div>
           </article>
 
+          <article class="producto" data-nombre="Mojito tradicional" data-descripcion="Ron, limón, ginger y yerbabuena."
+            data-precio="$15.000" data-imagen="">
+            <div class="producto-imagen sin-imagen"></div>
+            <div class="producto-info">
+              <h3>Mojito tradicional</h3>
+              <p>Ron, limón, ginger y yerbabuena.</p>
+              <div class="producto-footer">
+                <span>$15.000</span>
+                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
+              </div>
+            </div>
+          </article>
+
           <article class="producto" data-nombre="Coronita fusión"
             data-descripcion="Tequila, curasao azul, zumo de limón y coronita." data-precio="$18.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
@@ -1650,18 +1698,7 @@
             </div>
           </article>
 
-          <article class="producto" data-nombre="Mojito tradicional" data-descripcion="Ron, limón, ginger y yerbabuena."
-            data-precio="$15.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Mojito tradicional</h3>
-              <p>Ron, limón, ginger y yerbabuena.</p>
-              <div class="producto-footer">
-                <span>$15.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
+          
 
           <article class="producto" data-nombre="Daiquiri fresa o maracuyá"
             data-descripcion="Ron blanco, zumo de limón y fruta a elección (fresa o maracuyá)." data-precio="$20.000"
@@ -1718,7 +1755,6 @@
             </div>
           </article>
         </div>
-
       </div>
     </div>
   </section>
@@ -1735,7 +1771,7 @@
           style="display:none;">Ver topping</button>
         <ul class="ventana-toppings" id="ventana-toppings" style="display:none;"></ul>
         <p id="ventana-precio"></p>
-        
+
       </div>
     </div>
   </div>
@@ -1762,10 +1798,10 @@
           <label for="pago">Método de pago</label>
           <select id="pago">
             <option class="value-pago" value="">Selecciona...</option>
-            <option class="value-pago"  value="Efectivo">Efectivo</option>
-            <option class="value-pago"  value="Nequi">Nequi</option>
-            <option class="value-pago"  value="Daviplata">Daviplata</option>
-            <option class="value-pago"  value="Transferencia">Transferencia bancaria</option>
+            <option class="value-pago" value="Efectivo">Efectivo</option>
+            <option class="value-pago" value="Nequi">Nequi</option>
+            <option class="value-pago" value="Daviplata">Daviplata</option>
+            <option class="value-pago" value="Transferencia">Transferencia bancaria</option>
           </select>
         </div>
         <div class="campo">
@@ -1869,10 +1905,10 @@
           <ul class="pie-pagina-lista">
             <li><a href="#carta">Carta</a></li>
             <li><a href="#pedidos">Pedidos</a></li>
-            <li><a href="#reservas">Reservas</a></li> 
+            <li><a href="#reservas">Reservas</a></li>
             <li><a href="#ubicacion">Ubicación</a></li>
             <li><a href="#quienes">¿Quiénes somos?</a></li>
-            
+
           </ul>
         </div>
         <div>
