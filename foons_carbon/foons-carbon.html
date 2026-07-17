@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Foons Restaurante</title>
-  <link rel="stylesheet" href="./foons_restaurante.css" />
+  <title>Foons Al Carbon</title>
+  <link rel="stylesheet" href="./foons-carbon.css" />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
 </head>
@@ -14,7 +14,7 @@
   <header class="encabezado" id="inicio">
     <div class="barra">
       <a class="logotipo" href="#portada-inicio">
-        <img src="../img/foons_restaurante_logo.png" alt="Foons Restaurante" />
+        <img src="../img/foons_al_carbon_logo.png" alt="Foons Al Carbon" />
       </a>
 
       <nav class="navegacion" id="navegacion">
@@ -49,8 +49,8 @@
   <section class="portada" id="portada-inicio">
     <div class="portada-contenido">
       <p class="sobretitulo">Bienvenido a</p>
-      <h1>Foons<br />Restaurante</h1>
-      <p class="portada-texto">Sabores del mundo en un solo lugar</p>
+      <h1>Foons<br />Al Carbón</h1>
+      <p class="portada-texto">Parrilla artesanal, Sabor autentico.</p>
       <div class="acciones">
         <a href="#carta" class="boton">Ver carta</a>
         <a href="#pedidos" class="boton boton--whatsapp">Hacer pedido a domicilio</a>
@@ -66,11 +66,13 @@
 
       <div class="pestanas" role="tablist" aria-label="Categorías de menú">
         <button class="pestana activa" data-categoria="entradas" role="tab">Entradas</button>
-        <button class="pestana" data-categoria="menu-infantil" role="tab">Menu infantil</button>
+        <button class="pestana" data-categoria="menu-infantil" role="tab">Menú infantil</button>
+        <button class="pestana" data-categoria="asados-al-carbon" role="tab">Asados al carbón</button>
+        <button class="pestana" data-categoria="pinchos" role="tab">Pinchos</button>
         <button class="pestana" data-categoria="hamburguesas" role="tab">Hamburguesas</button>
-        <button class="pestana" data-categoria="salchipapas" role="tab">Salchipapas</button>
+
+
         <button class="pestana" data-categoria="perros" role="tab">Perros</button>
-        <button class="pestana" data-categoria="sandwich" role="tab">Sandwich</button>
         <button class="pestana" data-categoria="pizzas" role="tab">Pizzas</button>
         <button class="pestana" data-categoria="asados" role="tab">Asados</button>
         <button class="pestana" data-categoria="desgranados" role="tab">Desgranados</button>
@@ -82,55 +84,30 @@
 
       <div class="productos">
         <div class="grupo activo" data-grupo="entradas">
-          <article class="producto" data-nombre="Chicharron"
-            data-descripcion="300 gramos de chicharron, bollo limpio con queso, guacamole y picante suave."
-            data-precio="$24.000" data-imagen="foons_restaurante/img_restaurante/salchipapa.jpg">
+
+          <article class="producto" data-nombre="Chorizo antioqueño"
+            data-descripcion="Vienen acompañados de bollo de maíz o arepa, guacamole y suero costeño"
+            data-precio="$15.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Chicharron</h3>
-              <p>300 gramos de chicharron, bollo limpio con queso, guacamole y picante suave.</p>
+              <h3>Chorizo antioqueño</h3>
+              <p>Vienen acompañados de bollo de maíz o arepa, guacamole y suero costeño</p>
               <div class="producto-footer">
-                <span>$24.000</span>
+                <span>$15.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
               </div>
             </div>
           </article>
 
-          <article class="producto" data-nombre="Papas fritas gratinadas"
-            data-descripcion="Papas fritas, queso mozarella, queso cheddar, tocineta y salsas." data-precio="$16.000"
-            data-imagen="">
+          <article class="producto" data-nombre="chicharrón al barril"
+            data-descripcion="Vienen acompañados de bollo de maíz o arepa, guacamole y suero costeño"
+            data-precio="$20.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Papas fritas gratinadas</h3>
-              <p>Papas fritas, queso mozarella, queso cheddar, tocineta y salsas.</p>
+              <h3>chicharrón al barril</h3>
+              <p>Vienen acompañados de bollo de maíz o arepa, guacamole y suero costeño</p>
               <div class="producto-footer">
-                <span>$16.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Aros de cebolla"
-            data-descripcion="Aros de cebolla apanados y salsa de la casa." data-precio="$10.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Aros de cebolla</h3>
-              <p>Aros de cebolla apanados y salsa de la casa.</p>
-              <div class="producto-footer">
-                <span>$10.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Guacachips" data-descripcion="Guacamole y pico de gallo con nachos."
-            data-precio="$10.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Guacachips</h3>
-              <p>Guacamole y pico de gallo con nachos.</p>
-              <div class="producto-footer">
-                <span>$10.000</span>
+                <span>$20.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
               </div>
             </div>
@@ -138,148 +115,69 @@
         </div>
 
         <div class="grupo" data-grupo="menu-infantil">
-          <article class="producto" data-nombre="Tender de pollo"
-            data-descripcion="Tiritas de pollo apanadas, acompañados de papas a la francesa." data-precio="$16.000"
-            data-imagen="">
+          <article class="producto" data-nombre="Papas con salchicha"
+            data-descripcion="Salchicha, papas francesas y queso costeño" data-precio="$15.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Tender de pollo</h3>
-              <p>Tiritas de pollo apanadas, acompañados de papas a la francesa.</p>
+              <h3>Papas con salchicha</h3>
+              <p>Salchicha, papas francesas y queso costeño.</p>
               <div class="producto-footer">
-                <span>$16.000</span>
+                <span>$15.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
               </div>
             </div>
           </article>
 
           <article class="producto" data-nombre="Pechuguita infantil"
-            data-descripcion="150 gr de pechuga, papas a la francesa." data-precio="$16.000" data-imagen="">
+            data-descripcion="Acompañada con papas francesas y salsa de tomate" data-precio="$15.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Pechuguita infantil</h3>
-              <p>150 gr de pechuga, papas a la francesa.</p>
+              <p>Acompañada con papas francesas y salsa de tomate</p>
               <div class="producto-footer">
-                <span>$16.000</span>
+                <span>$15.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
               </div>
             </div>
           </article>
 
-          <article class="producto" data-nombre="Sandwich de jamon y queso"
-            data-descripcion="Papas a la francesa, salchicha ranchera." data-precio="$14.000" data-imagen="">
+          <article class="producto" data-nombre="Mini pincho"
+            data-descripcion="Mini pincho de pollo, papas francesas y queso costeño" data-precio="$15.000"
+            data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Sandwich de jamon y queso</h3>
-              <p>Papas a la francesa, salchicha ranchera.</p>
+              <h3>Mini pincho</h3>
+              <p>Mini pincho de pollo, papas francesas y queso costeño</p>
               <div class="producto-footer">
-                <span>$14.000</span>
+                <span>$15.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
               </div>
             </div>
           </article>
 
-          <article class="producto" data-nombre="Papas con salchicha"
-            data-descripcion="Papas a la francesa, salchicha y queso costeño." data-precio="$14.000" data-imagen="">
+          <article class="producto" data-nombre="Picadita Kids"
+            data-descripcion="Trocitos de pechugas de pollo, salchicha, papa francesa, queso costeño y salsa de tomate"
+            data-precio="$18.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Papas con salchicha</h3>
-              <p>Papas a la francesa, salchicha y queso costeño.</p>
+              <h3>Picadita Kids</h3>
+              <p>Trocitos de pechugas de pollo, salchicha, papa francesa, queso costeño y salsa de tomate</p>
               <div class="producto-footer">
-                <span>$14.000</span>
+                <span>$18.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
               </div>
             </div>
           </article>
         </div>
 
-        <div class="grupo" data-grupo="hamburguesas">
-          <article class="producto" data-nombre="Foons"
-            data-descripcion="Pan brioche, 300 gr de doble carne artesanal, doble queso mozarella, chorizo de    ahumado en salsa agridulce, lechuga, tomate, cebolla y salsas"
-            data-precio="$28.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Foons</h3>
-              <p>Pan brioche, 300 gr de doble carne artesanal, doble queso mozarella, chorizo de ternera ahumado en
-                salsa agridulce,
-                lechuga, tomate, cebolla y salsas</p>
-              <div class="producto-footer">
-                <span>$28.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Chicken Brothers"
-            data-descripcion="Pan brioche, doble pechuga apanada, doble queso mozzarella, salsa de ajo, un crocante de queso parmesano, vegetales frescos y salsas."
-            data-precio="$26.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Chicken Brothers</h3>
-              <p>Pan brioche, doble pechuga apanada, doble queso mozzarella, salsa de ajo, un crocante de queso
-                parmesano, vegetales frescos y salsas.</p>
-              <div class="producto-footer">
-                <span>$26.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Pork belly burguer"
-            data-descripcion="Pan brioche, 150 gr de carne artesanal, 100 gr de chicharron, piña caramelizada, salsa ranch, cebolla crispy, lechuga, tomate y salsa de la casa."
-            data-precio="$26.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Pork belly burguer</h3>
-              <p>Pan brioche, 150 gr de carne artesanal, 100 gr de chicharron, piña caramelizada, salsa ranch, cebolla
-                crispy,
-                lechuga, tomate y salsa de la casa.</p>
-              <div class="producto-footer">
-                <span>$26.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Costeña"
-            data-descripcion="Pan brioche, 150 gr carne artesanal, queso mozarella, madurito caramelizado, queso frito apanado, papa ripio."
-            data-precio="$26.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Costeña</h3>
-              <p>Pan brioche, 150 gr carne artesanal, queso mozarella, madurito caramelizado, queso frito apanado, papa
-                ripio.</p>
-              <div class="producto-footer">
-                <span>$26.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="BBQ ribs"
-            data-descripcion="Pan brioche, 150 gramos de carne artesanal, queso mozarella, costillas de cerdo desmechadas bañadas en salsa bbq y cerveza artesanal, tocineta, lechuga, tomate, cebolla y salsa."
-            data-precio="$26.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>BBQ ribs</h3>
-              <p>Pan brioche, 150 gramos de carne artesanal, queso mozarella, costillas de cerdo desmechadas bañadas en
-                salsa bbq y cerveza artesanal,
-                tocineta, lechuga, tomate, cebolla y salsa.</p>
-              <div class="producto-footer">
-                <span>$26.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Chipotle"
-            data-descripcion="Pan brioche, gr de carne artesanal, queso mozarella, aros de cebolla apanados, tocineta, salsa chipotle, lechuga, tomate"
+        <div class="grupo" data-grupo="asados-al-carbon">
+          <article class="producto" data-nombre="Lomo de Cerdo"
+            data-descripcion="acompañado con papa francesa, bollo de maíz o arepa picada y pico de gallo."
             data-precio="$25.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Chipotle</h3>
-              <p>Pan brioche, gr de carne artesanal, queso mozarella, aros de cebolla apanados, tocineta, salsa
-                chipotle,
-                lechuga, tomate</p>
+              <h3>Lomo de Cerdo</h3>
+              <p>acompañado con papa francesa, bollo de maíz o arepa picada y pico de gallo.</p>
               <div class="producto-footer">
                 <span>$25.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
@@ -287,46 +185,146 @@
             </div>
           </article>
 
-          <article class="producto" data-nombre="Burguer Mixta"
-            data-descripcion="Pan brioche, 150 gr de carne artesanal, 100 gr de pechuga de pollo a la plancha, doble queso mozarella, tocineta, lechuga, tomate, cebolla y salsas"
-            data-precio="$24.000" data-imagen="">
+          <article class="producto" data-nombre="Pechuga de pollo"
+            data-descripcion="acompañado con papa francesa, bollo de maíz o arepa picada y pico de gallo."
+            data-precio="$25.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Burguer Mixta</h3>
-              <p>Pan brioche, 150 gr de carne artesanal, 100 gr de pechuga de pollo a la plancha, doble queso mozarella,
-                tocineta,
-                lechuga, tomate, cebolla y salsas</p>
+              <h3>Pechuga de pollo</h3>
+              <p>acompañado con papa francesa, bollo de maíz o arepa picada y pico de gallo.</p>
               <div class="producto-footer">
-                <span>$24.000</span>
+                <span>$25.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
               </div>
             </div>
           </article>
 
-          <article class="producto" data-nombre="Cheese burguer"
-            data-descripcion="Pan brioche, 150 gr de carne premium, queso cheddar, queso mozarella, salsa de queso cheddar, cebolla caramelizada, trocitos de tocineta, cebolla crispi"
-            data-precio="$24.000" data-imagen="">
+          <article class="producto" data-nombre="Churrasco"
+            data-descripcion="acompañado con papa francesa, bollo de maíz o arepa picada y pico de gallo."
+            data-precio="$33.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Cheese burguer</h3>
-              <p>Pan brioche, 150 gr de carne premium, queso cheddar, queso mozarella, salsa de queso cheddar, cebolla
-                caramelizada,
-                trocitos de tocineta, cebolla crispi</p>
+              <h3>Churrasco</h3>
+              <p>acompañado con papa francesa, bollo de maíz o arepa picada y pico de gallo.</p>
               <div class="producto-footer">
-                <span>$24.000</span>
+                <span>$33.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
               </div>
             </div>
           </article>
 
-          <article class="producto" data-nombre="Burguer Texas"
-            data-descripcion="Pan brioche, 150 gr de carne artesanal, queso mozarella, tocineta, cebolla caramelizada, lechuga, tomate y salsas"
+          <article class="producto" data-nombre="Asado mixto"
+            data-descripcion="acompañado con papa francesa, bollo de maíz o arepa picada y pico de gallo."
+            data-precio="$35.000" data-imagen="">
+            <div class="producto-imagen sin-imagen"></div>
+            <div class="producto-info">
+              <h3>Asado mixto</h3>
+              <p>acompañado con papa francesa, bollo de maíz o arepa picada y pico de gallo.</p>
+              <div class="producto-footer">
+                <span>$35.000</span>
+                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto" data-nombre="chicharrón al barril"
+            data-descripcion="acompañado con papa francesa, bollo de maíz o arepa picada y pico de gallo."
+            data-precio="$35.000" data-imagen="">
+            <div class="producto-imagen sin-imagen"></div>
+            <div class="producto-info">
+              <h3>chicharrón al barril</h3>
+              <p>acompañado con papa francesa, bollo de maíz o arepa picada y pico de gallo.</p>
+              <div class="producto-footer">
+                <span>$35.000</span>
+                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto" data-nombre="Lomo fino"
+            data-descripcion="acompañado con papa francesa, bollo de maíz o arepa picada y pico de gallo."
+            data-precio="$36.000" data-imagen="">
+            <div class="producto-imagen sin-imagen"></div>
+            <div class="producto-info">
+              <h3>Lomo fino</h3>
+              <p>acompañado con papa francesa, bollo de maíz o arepa picada y pico de gallo.</p>
+              <div class="producto-footer">
+                <span>$36.000</span>
+                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="producto" data-nombre="Punta gorda"
+            data-descripcion="acompañado con papa francesa, bollo de maíz o arepa picada y pico de gallo."
+            data-precio="$36.000" data-imagen="">
+            <div class="producto-imagen sin-imagen"></div>
+            <div class="producto-info">
+              <h3>Punta gorda</h3>
+              <p>acompañado con papa francesa, bollo de maíz o arepa picada y pico de gallo.</p>
+              <div class="producto-footer">
+                <span>$36.000</span>
+                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto" data-nombre="Costillas BBQ"
+            data-descripcion="Costillas de cerdo deshuesadas bañadas en una salsa BBQ de maracuyá" data-precio="$36.000"
+            data-imagen="">
+            <div class="producto-imagen sin-imagen"></div>
+            <div class="producto-info">
+              <h3>Costillas BBQ</h3>
+              <p>Costillas de cerdo deshuesadas bañadas en una salsa BBQ de maracuyá</p>
+              <div class="producto-footer">
+                <span>$36.000</span>
+                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto" data-nombre="New York 300 a 350  GR"
+            data-descripcion="acompañado con papa francesa, bollo de maíz o arepa picada y pico de gallo."
+            data-precio="$48.000" data-imagen="">
+            <div class="producto-imagen sin-imagen"></div>
+            <div class="producto-info">
+              <h3>New York 300 a 350 GR</h3>
+              <p>acompañado con papa francesa, bollo de maíz o arepa picada y pico de gallo.
+              </p>
+              <div class="producto-footer">
+                <span>$48.000</span>
+                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="producto" data-nombre="Parrillada FOONS (3 A 4 personas)"
+            data-descripcion="Carne, pollo, cerdo, chorizo antioqueño chicharrón al barril, bollo de maíz, papa francesa y arepa asada, guacamole, salsa de ajo y chimichurri"
+            data-precio="$75.000" data-imagen="">
+            <div class="producto-imagen sin-imagen"></div>
+            <div class="producto-info">
+              <h3>Parrillada FOONS (3 A 4 personas)</h3>
+              <p>Carne, pollo, cerdo, chorizo antioqueño chicharrón al barril, bollo de maíz, papa francesa y arepa
+                asada, guacamole, salsa de ajo y chimichurri</p>
+              <div class="producto-footer">
+                <span>$75.000</span>
+                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="grupo" data-grupo="pinchos">
+
+          <article class="producto" data-nombre="Pincho de pollo"
+            data-descripcion="acompañado de arepa picada, bollo de maíz o papa francesa con queso costeño rallado y pico de gallo."
             data-precio="$22.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Burguer Texas</h3>
-              <p>Pan brioche, 150 gr de carne artesanal, queso mozarella, tocineta, cebolla caramelizada, lechuga,
-                tomate y salsas
+              <h3>Pincho de pollo</h3>
+              <p>acompañado de arepa picada, bollo de maíz o papa francesa con queso costeño rallado y pico de gallo.
               </p>
               <div class="producto-footer">
                 <span>$22.000</span>
@@ -335,46 +333,14 @@
             </div>
           </article>
 
-          <article class="producto" data-nombre="Burguer Pollo"
-            data-descripcion="Pan brioche, 150 gr de pechuga a la plancha, queso mozarella, lechuga, tomate, cebolla y salsas"
-            data-precio="$20.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Burguer Pollo</h3>
-              <p>Pan brioche, 150 gr de pechuga a la plancha, queso mozarella, lechuga, tomate, cebolla y salsas</p>
-              <div class="producto-footer">
-                <span>$20.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Burguer Clasica"
-            data-descripcion="Pan brioche, 150 gr de carne artesanal, queso mozarella, lechuga, tomate, cebolla y salsas"
-            data-precio="$20.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Burguer Clasica</h3>
-              <p>Pan brioche, 150 gr de carne artesanal, queso mozarella, lechuga, tomate, cebolla y salsas</p>
-              <div class="producto-footer">
-                <span>$20.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-
-        </div>
-
-        <div class="grupo" data-grupo="perros">
-          <article class="producto" data-nombre="Perro callejero"
-            data-descripcion="Carne, pollo, butifarra, chorizo, maiz, cebolla, queso costeño, papa ripio y a todo mezclado para una explosión de sabor en tu boca."
+          <article class="producto" data-nombre="Pincho Mixto"
+            data-descripcion="Carne y pollo, acompañado de arepa picada, bollo de maíz o papa francesa con queso costeño rallado y pico de gallo."
             data-precio="$24.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Perro callejero</h3>
-              <p>Carne, pollo, butifarra, chorizo, maiz, cebolla, queso costeño, papa ripio y a todo mezclado para una
-                explosión de sabor en tu boca.</p>
+              <h3>Pincho Mixto</h3>
+              <p>Carne y pollo, acompañado de arepa picada, bollo de maíz o papa francesa con queso costeño rallado y
+                pico de gallo.</p>
               <div class="producto-footer">
                 <span>$24.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
@@ -382,55 +348,30 @@
             </div>
           </article>
 
-          <article class="producto" data-nombre="Perro super ranchero"
-            data-descripcion="Salchicha super ranchera, vegetales frescos, queso mozarella, papa ripio y salsa."
-            data-precio="$22.000" data-imagen="">
+          <article class="producto" data-nombre="Pinchos trifásico"
+            data-descripcion="Carne, pollo, chorizo y butifarra, acompañado de arepa picada, bollo de maíz o papa francesa con queso costeño rallado y pico de gallo."
+            data-precio="$25.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Perro super ranchero</h3>
-              <p>Salchicha super ranchera, vegetales frescos, queso mozarella, papa ripio y salsa.</p>
+              <h3>Pinchos trifásico</h3>
+              <p>Carne, pollo, chorizo y butifarra, acompañado de arepa picada, bollo de maíz o papa francesa con queso
+                costeño rallado y pico de gallo.</p>
               <div class="producto-footer">
-                <span>$22.000</span>
+                <span>$25.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
               </div>
             </div>
           </article>
+        </div>
 
-          <article class="producto" data-nombre="Perro foons"
-            data-descripcion="Pollo, chorizo, butifarra, ranchera, queso mozarella, maiz y tocineta."
-            data-precio="$22.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Perro foons</h3>
-              <p>Pollo, chorizo, butifarra, ranchera, queso mozarella, maiz y tocineta.</p>
-              <div class="producto-footer">
-                <span>$22.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Perro suizo"
-            data-descripcion="Salchicha suiza, queso mozarella, vegetales frescos, cebollas crispy y tocineta."
-            data-precio="$22.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Perro suizo</h3>
-              <p>Salchicha suiza, queso mozarella, vegetales frescos, cebollas crispy y tocineta.</p>
-              <div class="producto-footer">
-                <span>$22.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Perro havaiano"
-            data-descripcion="Salchicha ranchera, piña caramelizada, tocineta, vegetales frescos, queso mozarella y salsa."
+        <div class="grupo" data-grupo="hamburguesas">
+          <article class="producto" data-nombre="Clásic BBQ"
+            data-descripcion="Carne premium, queso cheddar, tocineta, vegetales frescos y salsa BBQ de maracuyá."
             data-precio="$20.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Perro havaiano</h3>
-              <p>Salchicha ranchera, piña caramelizada, tocineta, vegetales frescos, queso mozarella y salsa.</p>
+              <h3>Clásic BBQ</h3>
+              <p>Carne premium, queso cheddar, tocineta, vegetales frescos y salsa BBQ de maracuyá.</p>
               <div class="producto-footer">
                 <span>$20.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
@@ -438,59 +379,57 @@
             </div>
           </article>
 
-          <article class="producto" data-nombre="Perro ranchero"
-            data-descripcion="Salchicha ranchera, vegetales frescos, queso mozarella, papa ripio y salsas."
-            data-precio="$9.000 / 14.000" data-imagen="">
+          <article class="producto" data-nombre="Parrillera"
+            data-descripcion="Carne premium, queso cheddar, queso asada a la parrilla, mermelada de tocineta, cebolla crispy y vegetales frescos."
+            data-precio="$24.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Perro ranchero</h3>
-              <p>Salchicha ranchera, vegetales frescos, queso mozarella, papa ripio y salsas.</p>
+              <h3>Parrillera</h3>
+              <p>Carne premium, queso cheddar, queso asada a la parrilla, mermelada de tocineta, cebolla crispy y vegetales frescos.</p>
               <div class="producto-footer">
-                <span>$9.000 / 14.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <div class="grupo" data-grupo="sandwich">
-          <article class="producto" data-nombre="Steak cheddar"
-            data-descripcion="Finas tiras de lomo fino asado con chimichurri, cebolla salteada, queso cheddar y salsa de queso."
-            data-precio="$22.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Steak cheddar</h3>
-              <p>Finas tiras de lomo fino asado con chimichurri, cebolla salteada, queso cheddar y salsa de queso.</p>
-              <div class="producto-footer">
-                <span>$22.000</span>
+                <span>$24.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
               </div>
             </div>
           </article>
 
-          <article class="producto" data-nombre="Pulled pork"
-            data-descripcion="Costilla de cerdo desmechada en salsa bbq de cerveza, queso mozarella, vegetales frescos y salsas."
-            data-precio="$22.000" data-imagen="">
+          <article class="producto" data-nombre="La gaucha"
+            data-descripcion="Carne premium, queso cheddar, mayonesa de ajo, chorizo antioqueño, chimichurri de la casa y vegetales frescos."
+            data-precio="$24.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Pulled pork</h3>
-              <p>Costilla de cerdo desmechada en salsa bbq de cerveza, queso mozarella, vegetales frescos y salsas.</p>
+              <h3>La gaucha</h3>
+              <p>Carne premium, queso cheddar, mayonesa de ajo, chorizo antioqueño, chimichurri de la casa y vegetales frescos.</p>
               <div class="producto-footer">
-                <span>$22.000</span>
+                <span>$24.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
               </div>
             </div>
           </article>
 
-          <article class="producto" data-nombre="Cubano"
-            data-descripcion="Pechuga a la plancha, queso mozarella, tocineta, jamon, vegetales frescos y salsas."
-            data-precio="$22.000" data-imagen="">
+          <article class="producto" data-nombre="La doble nekar"
+            data-descripcion="Doble carne premium, doble queso cheddar, tocineta crispy, queso crema de chile dulce y vegetales frescos."
+            data-precio="$27.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Cubano</h3>
-              <p>Pechuga a la plancha, queso mozarella, tocineta, jamon, vegetales frescos y salsas.</p>
+              <h3>La doble nekar</h3>
+              <p>Doble carne premium, doble queso cheddar, tocineta crispy, queso crema de chile dulce y vegetales frescos.</p>
               <div class="producto-footer">
-                <span>$22.000</span>
+                <span>$27.000</span>
+                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto" data-nombre="Caribbean blue"
+            data-descripcion="Carne premium, queso cheddar, tocineta, salsa de champiñones y queso azul."
+            data-precio="$27.000" data-imagen="">
+            <div class="producto-imagen sin-imagen"></div>
+            <div class="producto-info">
+              <h3>Caribbean blue</h3>
+              <p>Carne premium, queso cheddar, tocineta, salsa de champiñones y queso azul.</p>
+              <div class="producto-footer">
+                <span>$27.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
               </div>
             </div>
@@ -569,12 +508,12 @@
           </article>
 
           <article class="producto" data-nombre="Vegetariana"
-            data-descripcion="Tomate, cebolla, pimenton verde, champinon y maiz. Tamano personal, mediana o grande."
+            data-descripcion="Tomate, cebolla, pimenton verde, champinon y maíz. Tamano personal, mediana o grande."
             data-precio="Personal $15.000 Mediana $27.000 Grande $43.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Vegetariana</h3>
-              <p>Tomate, cebolla, pimenton verde, champinon y maiz. Tamano personal, mediana o grande.</p>
+              <p>Tomate, cebolla, pimenton verde, champinon y maíz. Tamano personal, mediana o grande.</p>
               <div class="producto-footer">
                 <span>Personal $15.000 Mediana $27.000 Grande $43.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
@@ -582,13 +521,13 @@
             </div>
           </article>
 
-          <article class="producto" data-nombre="Pollo-maiz"
-            data-descripcion="Pizza de pollo y maiz. Tamano personal, mediana o grande."
+          <article class="producto" data-nombre="Pollo-maíz"
+            data-descripcion="Pizza de pollo y maíz. Tamano personal, mediana o grande."
             data-precio="Personal $18.000 Mediana $36.000 Grande $53.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Pollo-maiz</h3>
-              <p>Pizza de pollo y maiz. Tamano personal, mediana o grande.</p>
+              <h3>Pollo-maíz</h3>
+              <p>Pizza de pollo y maíz. Tamano personal, mediana o grande.</p>
               <div class="producto-footer">
                 <span>Personal $18.000 Mediana $36.000 Grande $53.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
@@ -667,12 +606,12 @@
           </article>
 
           <article class="producto" data-nombre="Mexicana"
-            data-descripcion="Carne molida bolanesa, pimenton, cebolla, maiz tierno, nachos triturados y cilantro finamente picado. Tamano personal, mediana o grande."
+            data-descripcion="Carne molida bolanesa, pimenton, cebolla, maíz tierno, nachos triturados y cilantro finamente picado. Tamano personal, mediana o grande."
             data-precio="Personal $20.000 Mediana $40.000 Grande $60.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Mexicana</h3>
-              <p>Carne molida bolanesa, pimenton, cebolla, maiz tierno, nachos triturados y cilantro finamente picado.
+              <p>Carne molida bolanesa, pimenton, cebolla, maíz tierno, nachos triturados y cilantro finamente picado.
                 Tamano personal, mediana o grande.</p>
               <div class="producto-footer">
                 <span>Personal $20.000 Mediana $40.000 Grande $60.000</span>
@@ -712,12 +651,12 @@
           </article>
 
           <article class="producto" data-nombre="Especial"
-            data-descripcion="Jamon, pollo desmechado, chorizo, ranchera, maiz tierno, papa ripio y salsa tartara. Tamano personal, mediana o grande."
+            data-descripcion="Jamon, pollo desmechado, chorizo, ranchera, maíz tierno, papa ripio y salsa tartara. Tamano personal, mediana o grande."
             data-precio="Personal $20.000 Mediana $40.000 Grande $60.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Especial</h3>
-              <p>Jamon, pollo desmechado, chorizo, ranchera, maiz tierno, papa ripio y salsa tartara. Tamano personal,
+              <p>Jamon, pollo desmechado, chorizo, ranchera, maíz tierno, papa ripio y salsa tartara. Tamano personal,
                 mediana o grande.</p>
               <div class="producto-footer">
                 <span>Personal $20.000 Mediana $40.000 Grande $60.000</span>
@@ -793,11 +732,11 @@
             </div>
           </article>
 
-          <article class="producto" data-nombre="Adicional: maiz" data-descripcion="$3.000 / $6.000 segun tamano."
+          <article class="producto" data-nombre="Adicional: maíz" data-descripcion="$3.000 / $6.000 segun tamano."
             data-precio="Desde $3.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Adicional: maiz</h3>
+              <h3>Adicional: maíz</h3>
               <p>$3.000 / $6.000 segun tamano.</p>
               <div class="producto-footer">
                 <span>Desde $3.000</span>
@@ -809,12 +748,12 @@
 
         <div class="grupo" data-grupo="asados">
           <article class="producto" data-nombre="Cambio de acompañamiento"
-            data-descripcion="Opciones disponibles: papa casco, papa al vapor, bollo de maiz." data-precio="Incluido"
+            data-descripcion="Opciones disponibles: papa casco, papa al vapor, bollo de maíz." data-precio="Incluido"
             data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Cambio de acompañamiento</h3>
-              <p>Opciones disponibles: papa casco, papa al vapor, bollo de maiz.</p>
+              <p>Opciones disponibles: papa casco, papa al vapor, bollo de maíz.</p>
               <div class="producto-footer">
                 <span>Incluido</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
@@ -823,13 +762,13 @@
           </article>
 
           <article class="producto" data-nombre="Parrilada mixta"
-            data-descripcion="Chicharron, chorizo de ternera, salteado de lomo fino, lomo de cerdo y pechuga acompanado de papas casco, bollo de maiz con queso, guacamole, picante suave y salsas de la casa."
+            data-descripcion="chicharrón, chorizo de ternera, salteado de lomo fino, lomo de cerdo y pechuga acompañado de papas casco, bollo de maíz con queso, guacamole, picante suave y salsas de la casa."
             data-precio="$48.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Parrilada mixta</h3>
-              <p>Chicharron, chorizo de ternera, salteado de lomo fino, lomo de cerdo y pechuga acompanado de papas
-                casco, bollo de maiz con queso, guacamole, picante suave y salsas de la casa.</p>
+              <p>chicharrón, chorizo de ternera, salteado de lomo fino, lomo de cerdo y pechuga acompañado de papas
+                casco, bollo de maíz con queso, guacamole, picante suave y salsas de la casa.</p>
               <div class="producto-footer">
                 <span>$48.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
@@ -853,13 +792,13 @@
           </article>
 
           <article class="producto" data-nombre="Asado mixto"
-            data-descripcion="400 gramos entre filete de pechuga, lomo fino y chorizo de ternera todos asados a la plancha y acompanado de papas a la francesa y ensalada."
+            data-descripcion="400 gramos entre filete de pechuga, lomo fino y chorizo de ternera todos asados a la plancha y acompañado de papas a la francesa y ensalada."
             data-precio="$32.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Asado mixto</h3>
               <p>400 gramos entre filete de pechuga, lomo fino y chorizo de ternera todos asados a la plancha y
-                acompanado de papas a la francesa y ensalada.</p>
+                acompañado de papas a la francesa y ensalada.</p>
               <div class="producto-footer">
                 <span>$32.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
@@ -868,12 +807,12 @@
           </article>
 
           <article class="producto" data-nombre="Lomo fino"
-            data-descripcion="300 gr de lomo fino asado a la plancha, acompanado de papas a la francesa y pico de gallo."
+            data-descripcion="300 gr de lomo fino asado a la plancha, acompañado de papas a la francesa y pico de gallo."
             data-precio="$30.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Lomo fino</h3>
-              <p>300 gr de lomo fino asado a la plancha, acompanado de papas a la francesa y pico de gallo.</p>
+              <p>300 gr de lomo fino asado a la plancha, acompañado de papas a la francesa y pico de gallo.</p>
               <div class="producto-footer">
                 <span>$30.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
@@ -882,12 +821,12 @@
           </article>
 
           <article class="producto" data-nombre="Pechuga gratinada"
-            data-descripcion="300 gr de filete de pechuga asado a la plancha y gratinada con queso mozarella y parmesano, acompanado de papas a la francesa y pico de gallo."
+            data-descripcion="300 gr de filete de pechuga asado a la plancha y gratinada con queso mozarella y parmesano, acompañado de papas a la francesa y pico de gallo."
             data-precio="$27.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Pechuga gratinada</h3>
-              <p>300 gr de filete de pechuga asado a la plancha y gratinada con queso mozarella y parmesano, acompanado
+              <p>300 gr de filete de pechuga asado a la plancha y gratinada con queso mozarella y parmesano, acompañado
                 de papas a la francesa y pico de gallo.</p>
               <div class="producto-footer">
                 <span>$27.000</span>
@@ -911,12 +850,12 @@
           </article>
 
           <article class="producto" data-nombre="Medallones de lomo en salsa agridulce"
-            data-descripcion="300 gr de lomo de cerdo asado a la plancha y banados en salsa agridulce de la casa, acompanado de papas a la francesa y pico de gallo."
+            data-descripcion="300 gr de lomo de cerdo asado a la plancha y banados en salsa agridulce de la casa, acompañado de papas a la francesa y pico de gallo."
             data-precio="$25.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Medallones de lomo en salsa agridulce</h3>
-              <p>300 gr de lomo de cerdo asado a la plancha y banados en salsa agridulce de la casa, acompanado de papas
+              <p>300 gr de lomo de cerdo asado a la plancha y banados en salsa agridulce de la casa, acompañado de papas
                 a la francesa y pico de gallo.</p>
               <div class="producto-footer">
                 <span>$25.000</span>
@@ -940,12 +879,12 @@
           </article>
 
           <article class="producto" data-nombre="Lomo de cerdo"
-            data-descripcion="300 gr de lomo de cerdo asado a la plancha, acompanado de papas a la francesa y pico de gallo."
+            data-descripcion="300 gr de lomo de cerdo asado a la plancha, acompañado de papas a la francesa y pico de gallo."
             data-precio="$23.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Lomo de cerdo</h3>
-              <p>300 gr de lomo de cerdo asado a la plancha, acompanado de papas a la francesa y pico de gallo.</p>
+              <p>300 gr de lomo de cerdo asado a la plancha, acompañado de papas a la francesa y pico de gallo.</p>
               <div class="producto-footer">
                 <span>$23.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
@@ -954,11 +893,11 @@
           </article>
 
           <article class="producto" data-nombre="Brocheta de pollo"
-            data-descripcion="Acompanado de papa casco y mazorca desgranada." data-precio="$22.000" data-imagen="">
+            data-descripcion="acompañado de papa casco y mazorca desgranada." data-precio="$22.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Brocheta de pollo</h3>
-              <p>Acompanado de papa casco y mazorca desgranada.</p>
+              <p>acompañado de papa casco y mazorca desgranada.</p>
               <div class="producto-footer">
                 <span>$22.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
@@ -967,12 +906,12 @@
           </article>
 
           <article class="producto" data-nombre="Pechuga a la plancha"
-            data-descripcion="300 gr de filete de pechuga asado a la plancha, acompanado de papas a la francesa y pico de gallo."
+            data-descripcion="300 gr de filete de pechuga asado a la plancha, acompañado de papas a la francesa y pico de gallo."
             data-precio="$21.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Pechuga a la plancha</h3>
-              <p>300 gr de filete de pechuga asado a la plancha, acompanado de papas a la francesa y pico de gallo.</p>
+              <p>300 gr de filete de pechuga asado a la plancha, acompañado de papas a la francesa y pico de gallo.</p>
               <div class="producto-footer">
                 <span>$21.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
@@ -981,225 +920,103 @@
           </article>
         </div>
 
-        <div class="grupo" data-grupo="toppings-burger">
-          <article class="producto" data-nombre="Cambio por papa francesa"
-            data-descripcion="Adicional para tus hamburguesas." data-precio="$2.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Cambio por papa francesa</h3>
-              <p>Adicional para tus hamburguesas.</p>
-              <div class="producto-footer">
-                <span>$2.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Cebolla caramelizada"
-            data-descripcion="Adicional para tus hamburguesas." data-precio="$4.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Cebolla caramelizada</h3>
-              <p>Adicional para tus hamburguesas.</p>
-              <div class="producto-footer">
-                <span>$4.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Tocineta" data-descripcion="Adicional para tus hamburguesas."
-            data-precio="$4.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Tocineta</h3>
-              <p>Adicional para tus hamburguesas.</p>
-              <div class="producto-footer">
-                <span>$4.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Queso costeño frito o asado (100 GR) "
-            data-descripcion="Adicional para papas." data-precio="$5.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Queso costeño frito o asado (100 GR) </h3>
-              <p>Adicional para papas.</p>
-              <div class="producto-footer">
-                <span>$5.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Carne o pollo + queso"
-            data-descripcion="Adicional para tus hamburguesas." data-precio="$7.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Carne o pollo + queso</h3>
-              <p>Adicional para tus hamburguesas.</p>
-              <div class="producto-footer">
-                <span>$7.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-        </div>
+        
 
         <div class="grupo" data-grupo="salchipapas">
-          <article class="producto" data-nombre="Mega master gratinada (x3 P)"
-            data-descripcion="Pechuga de pollo, lomo fino, lomo de cerdo, chorizo de ternera, papas a la francesa, salteado de pimenton y cebolla, queso costeño, lechuga, maiz, papa ripio y tocineta."
-            data-precio="$65.000" data-imagen="">
+          <article class="producto" data-nombre="Mega master gratinada (x3 p)"
+            data-descripcion="Pechuga de pollo, lomo fino, lomo de cerdo, chorizo de ternera, papas a la francesa, salteado de pimenton y cebolla, queso costeño, lechuga, maíz, papa ripio y tocineta."
+            data-precio="$60.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Mega master gratinada (x3 P)</h3>
+              <h3>Mega master gratinada (x3 p)</h3>
               <p>Pechuga de pollo, lomo fino, lomo de cerdo, chorizo de ternera, papas a la francesa, salteado de
-                pimenton y cebolla, queso costeño, lechuga, maiz, papa ripio y tocineta.</p>
+                pimenton y cebolla, queso costeño, lechuga, maíz, papa ripio y tocineta.</p>
               <div class="producto-footer">
-                <span>$65.000</span>
+                <span>$60.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
               </div>
             </div>
           </article>
 
-          <article class="producto" data-nombre="Pecado Pork (x2 P)"
-            data-descripcion="Costilla deshuesado, chicharrón, pulled pork, salchicha alemana, papa francesa, queso costeño y salsa de la casa."
-            data-precio="$50.000" data-imagen="">
+          <article class="producto" data-nombre="Especial (x3 p)"
+            data-descripcion="Chorizo, butifarra, salchicha manguera, ranchera, pollo, maíz. Opcion gratinada disponible."
+            data-precio="$40.000 / $48.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Pecado Pork (x2 P)</h3>
-              <p>Costilla deshuesado, chicharrón, pulled pork, salchicha alemana, papa francesa, queso costeño y salsa
-                de la casa.</p>
+              <h3>Especial (x3 p)</h3>
+              <p>Chorizo, butifarra, salchicha manguera, ranchera, pollo, maíz. Opcion gratinada disponible.</p>
               <div class="producto-footer">
-                <span>$50.000</span>
+                <span>$40.000 / $48.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
               </div>
             </div>
           </article>
 
-          <article class="producto" data-nombre="Picada chicken tenders (x2 P)"
-            data-descripcion="Salchicha alemana, tenders de pollo con tocineta, alitas bbq, maicitos, papas francesas, queso costeño y salsas de la casa."
-            data-precio="$45.000" data-imagen="">
+          <article class="producto" data-nombre="Semi especial (x2 p)"
+            data-descripcion="Chorizo, butifarra, salchicha manguera, ranchera, pollo, maíz. Opcion gratinada disponible."
+            data-precio="$30.000 / $38.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Picada chicken tenders (x2 P)</h3>
-              <p>Salchicha alemana, tenders de pollo con tocineta, alitas bbq, maicitos, papas francesas, queso costeño
-                y salsas de la casa.</p>
+              <h3>Semi especial (x2 p)</h3>
+              <p>Chorizo, butifarra, salchicha manguera, ranchera, pollo, maíz. Opcion gratinada disponible.</p>
               <div class="producto-footer">
-                <span>$45.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Especial (x3 P)"
-            data-descripcion="Chorizo, butifarra, salchicha manguera, ranchera, pollo, maiz."
-            data-precio="$43.000 / Gratinada $53.000 " data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Especial (x3 P)</h3>
-              <p>Chorizo, butifarra, salchicha manguera, ranchera, pollo, maiz.</p>
-              <div class="producto-footer">
-                <span>$43.000 / Gratinada $53.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Semi especial (x2 P)"
-            data-descripcion="Chorizo, butifarra, salchicha manguera, ranchera, pollo, maiz."
-            data-precio="$33.000 / Gratinada $43.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Semi especial (x2 P)</h3>
-              <p>Chorizo, butifarra, salchicha manguera, ranchera, pollo, maiz.</p>
-              <div class="producto-footer">
-                <span>$33.000 / Gratinada $43.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Suiza y Lomo"
-            data-descripcion="Ranchera suiza y lomo fino salteados con pimentón y cebolla, bañadas en salsa de la casa, lechuga, ques costeño, ripio y una lluivia de tocineta."
-            data-precio="$28.000 / Gratinada $34.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Suiza y Lomo</h3>
-              <p>Ranchera suiza y lomo fino salteados con pimentón y cebolla, bañadas en salsa de la casa, lechuga, ques
-                costeño, ripio y una lluivia de tocineta.</p>
-              <div class="producto-footer">
-                <span>$28.000 / Gratinada $34.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="La mechadita"
-            data-descripcion="Carne desmechada, salchicha alemana, guacamole, pico de gallo, papa francesa, queso costeño y salsas."
-            data-precio="$27.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>La mechadita</h3>
-              <p>Carne desmechada, salchicha alemana, guacamole, pico de gallo, papa francesa, queso costeño y salsas.
-              </p>
-              <div class="producto-footer">
-                <span>$27.000</span>
+                <span>$30.000 / $38.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
               </div>
             </div>
           </article>
 
           <article class="producto" data-nombre="Chori-pollo"
-            data-descripcion="Chorizo de ternera, pechuga de pollo, maiz y tocineta."
-            data-precio="$25.000 / Gratinada $31.000" data-imagen="">
+            data-descripcion="Chorizo de ternera, pechuga de pollo, maíz y tocineta. Opcion gratinada disponible."
+            data-precio="$24.000 / $29.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Chori-pollo</h3>
-              <p>Chorizo de ternera, pechuga de pollo, maiz y tocineta.</p>
+              <p>Chorizo de ternera, pechuga de pollo, maíz y tocineta. Opcion gratinada disponible.</p>
               <div class="producto-footer">
-                <span>$25.000 / Gratinada $31.000</span>
+                <span>$24.000 / $29.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
               </div>
             </div>
           </article>
 
-          <article class="producto" data-nombre="Ranchi-pollo" data-descripcion="Ranchera, pollo, tocineta."
-            data-precio="$24.000 / Gratinada $30.000" data-imagen="">
+          <article class="producto" data-nombre="Ranchi-pollo"
+            data-descripcion="Ranchera, pollo, tocineta. Opcion gratinada disponible." data-precio="$23.000 / $28.000"
+            data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Ranchi-pollo</h3>
-              <p>Ranchera, pollo, tocineta.</p>
+              <p>Ranchera, pollo, tocineta. Opcion gratinada disponible.</p>
               <div class="producto-footer">
-                <span>$24.000 / Gratinada $30.000</span>
+                <span>$23.000 / $28.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
               </div>
             </div>
           </article>
 
-          <article class="producto" data-nombre="Salchi mixta" data-descripcion="Chorizo, butifarra, manguera y maiz."
-            data-precio="$21.000 / Gratinada $27.000" data-imagen="">
+          <article class="producto" data-nombre="Salchi mixta"
+            data-descripcion="Chorizo, butifarra, manguera y maíz. Opcion gratinada disponible."
+            data-precio="$19.000 / $24.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Salchi mixta</h3>
-              <p>Chorizo, butifarra, manguera y maiz.</p>
+              <p>Chorizo, butifarra, manguera y maíz. Opcion gratinada disponible.</p>
               <div class="producto-footer">
-                <span>$21.000 / Gratinada $27.000</span>
+                <span>$19.000 / $24.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
               </div>
             </div>
           </article>
 
-          <article class="producto" data-nombre="Ranchera" data-descripcion="Salchicha ranchera."
-            data-precio="$20.000 / Gratinada $26.000" data-imagen="">
+          <article class="producto" data-nombre="Ranchera"
+            data-descripcion="Salchicha ranchera. Opcion gratinada disponible." data-precio="$18.000 / $23.000"
+            data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Ranchera</h3>
-              <p>Salchicha ranchera.</p>
+              <p>Salchicha ranchera. Opcion gratinada disponible.</p>
               <div class="producto-footer">
-                <span>$20.000 / Gratinada $26.000</span>
+                <span>$18.000 / $23.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
               </div>
             </div>
@@ -1207,98 +1024,6 @@
         </div>
 
         <div class="grupo" data-grupo="topings-salchipapa">
-
-          <article class="producto" data-nombre="Pico de gallo" data-descripcion="Adicional para salchipapa."
-            data-precio="$3.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Pico de gallo</h3>
-              <p>Adicional para salchipapa.</p>
-              <div class="producto-footer">
-                <span>$3.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Cebolla caramelizada" data-descripcion="Adicional para salchipapa."
-            data-precio="$3.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Cebolla caramelizada</h3>
-              <p>Adicional para salchipapa.</p>
-              <div class="producto-footer">
-                <span>$3.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-           <article class="producto" data-nombre="Maiz" data-descripcion="Adicional para salchipapa."
-            data-precio="$3.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Maiz</h3>
-              <p>Adicional para salchipapa.</p>
-              <div class="producto-footer">
-                <span>$3.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Guacamole" data-descripcion="Adicional para salchipapa."
-            data-precio="$4.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Guacamole</h3>
-              <p>Adicional para salchipapa.</p>
-              <div class="producto-footer">
-                <span>$4.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Tocineta" data-descripcion="Adicional para salchipapa."
-            data-precio="$4.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Tocineta</h3>
-              <p>Adicional para salchipapa.</p>
-              <div class="producto-footer">
-                <span>$4.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Salchicha ranchera" data-descripcion="Adicional para salchipapa."
-            data-precio="$6.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Salchicha ranchera</h3>
-              <p>Adicional para salchipapa.</p>
-              <div class="producto-footer">
-                <span>$6.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="producto" data-nombre="Chorizo de ternera" data-descripcion="Adicional para salchipapa."
-            data-precio="$6.000" data-imagen="">
-            <div class="producto-imagen sin-imagen"></div>
-            <div class="producto-info">
-              <h3>Chorizo de ternera</h3>
-              <p>Adicional para salchipapa.</p>
-              <div class="producto-footer">
-                <span>$6.000</span>
-                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
-              </div>
-            </div>
-          </article>
-
           <article class="producto" data-nombre="Pulled pork" data-descripcion="Adicional para salchipapa."
             data-precio="$8.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
@@ -1325,14 +1050,66 @@
             </div>
           </article>
 
-          <article class="producto" data-nombre="Carne esmechada" data-descripcion="Adicional para salchipapa."
-            data-precio="$8.000" data-imagen="">
+          <article class="producto" data-nombre="Guacamole" data-descripcion="Adicional para salchipapa."
+            data-precio="$4.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Carne esmechada</h3>
+              <h3>Guacamole</h3>
               <p>Adicional para salchipapa.</p>
               <div class="producto-footer">
-                <span>$8.000</span>
+                <span>$4.000</span>
+                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto" data-nombre="maíz" data-descripcion="Adicional para salchipapa."
+            data-precio="$3.000" data-imagen="">
+            <div class="producto-imagen sin-imagen"></div>
+            <div class="producto-info">
+              <h3>maíz</h3>
+              <p>Adicional para salchipapa.</p>
+              <div class="producto-footer">
+                <span>$3.000</span>
+                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto" data-nombre="Salchicha ranchera" data-descripcion="Adicional para salchipapa."
+            data-precio="$6.000" data-imagen="">
+            <div class="producto-imagen sin-imagen"></div>
+            <div class="producto-info">
+              <h3>Salchicha ranchera</h3>
+              <p>Adicional para salchipapa.</p>
+              <div class="producto-footer">
+                <span>$6.000</span>
+                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto" data-nombre="Cebolla caramelizada" data-descripcion="Adicional para salchipapa."
+            data-precio="$3.000" data-imagen="">
+            <div class="producto-imagen sin-imagen"></div>
+            <div class="producto-info">
+              <h3>Cebolla caramelizada</h3>
+              <p>Adicional para salchipapa.</p>
+              <div class="producto-footer">
+                <span>$3.000</span>
+                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="producto" data-nombre="chicharrón" data-descripcion="Adicional para salchipapa."
+            data-precio="$12.000" data-imagen="">
+            <div class="producto-imagen sin-imagen"></div>
+            <div class="producto-info">
+              <h3>chicharrón</h3>
+              <p>Adicional para salchipapa.</p>
+              <div class="producto-footer">
+                <span>$12.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
               </div>
             </div>
@@ -1351,42 +1128,67 @@
             </div>
           </article>
 
-          
-
-          
-
-          <article class="producto" data-nombre="Chicharron" data-descripcion="Adicional para salchipapa."
-            data-precio="$12.000" data-imagen="">
+          <article class="producto" data-nombre="Pico de gallo" data-descripcion="Adicional para salchipapa."
+            data-precio="$3.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
-              <h3>Chicharron</h3>
+              <h3>Pico de gallo</h3>
               <p>Adicional para salchipapa.</p>
               <div class="producto-footer">
-                <span>$12.000</span>
+                <span>$3.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
               </div>
             </div>
           </article>
 
-         
+          <article class="producto" data-nombre="Tocineta" data-descripcion="Adicional para salchipapa."
+            data-precio="$4.000" data-imagen="">
+            <div class="producto-imagen sin-imagen"></div>
+            <div class="producto-info">
+              <h3>Tocineta</h3>
+              <p>Adicional para salchipapa.</p>
+              <div class="producto-footer">
+                <span>$4.000</span>
+                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
+              </div>
+            </div>
+          </article>
 
-          
+          <article class="producto" data-nombre="Chorizo de ternera" data-descripcion="Adicional para salchipapa."
+            data-precio="$6.000" data-imagen="">
+            <div class="producto-imagen sin-imagen"></div>
+            <div class="producto-info">
+              <h3>Chorizo de ternera</h3>
+              <p>Adicional para salchipapa.</p>
+              <div class="producto-footer">
+                <span>$6.000</span>
+                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
+              </div>
+            </div>
+          </article>
 
-          
-
-          
-
-          
+          <article class="producto" data-nombre="Carne esmechada" data-descripcion="Adicional para salchipapa."
+            data-precio="$8.000" data-imagen="">
+            <div class="producto-imagen sin-imagen"></div>
+            <div class="producto-info">
+              <h3>Carne esmechada</h3>
+              <p>Adicional para salchipapa.</p>
+              <div class="producto-footer">
+                <span>$8.000</span>
+                <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
+              </div>
+            </div>
+          </article>
         </div>
 
         <div class="grupo" data-grupo="desgranados">
           <article class="producto" data-nombre="Desgranado Foons"
-            data-descripcion="Pechuga a la plancha, lomo fino a la plancha, maiz tierno, queso mozzarella fundido, salsas y papa ripio. Pidelo con bollo o con papa."
+            data-descripcion="Pechuga a la plancha, lomo fino a la plancha, maíz tierno, queso mozzarella fundido, salsas y papa ripio. Pidelo con bollo o con papa."
             data-precio="$25.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Desgranado Foons</h3>
-              <p>Pechuga a la plancha, lomo fino a la plancha, maiz tierno, queso mozzarella fundido, salsas y papa
+              <p>Pechuga a la plancha, lomo fino a la plancha, maíz tierno, queso mozzarella fundido, salsas y papa
                 ripio. Pidelo con bollo o con papa.</p>
               <div class="producto-footer">
                 <span>$25.000</span>
@@ -1396,12 +1198,12 @@
           </article>
 
           <article class="producto" data-nombre="Desgranado Especial"
-            data-descripcion="Pechuga a la plancha, chorizo, butifarra, maiz tierno, queso mozzarella fundido, salsas y papa ripio. Pidelo con bollo o con papa."
+            data-descripcion="Pechuga a la plancha, chorizo, butifarra, maíz tierno, queso mozzarella fundido, salsas y papa ripio. Pidelo con bollo o con papa."
             data-precio="$23.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Desgranado Especial</h3>
-              <p>Pechuga a la plancha, chorizo, butifarra, maiz tierno, queso mozzarella fundido, salsas y papa ripio.
+              <p>Pechuga a la plancha, chorizo, butifarra, maíz tierno, queso mozzarella fundido, salsas y papa ripio.
                 Pidelo con bollo o con papa.</p>
               <div class="producto-footer">
                 <span>$23.000</span>
@@ -1411,12 +1213,12 @@
           </article>
 
           <article class="producto" data-nombre="Desgranado Pollo"
-            data-descripcion="Pechuga a la plancha, maiz tierno, queso mozzarella fundido, salsas y papa ripio. Pidelo con bollo o con papa."
+            data-descripcion="Pechuga a la plancha, maíz tierno, queso mozzarella fundido, salsas y papa ripio. Pidelo con bollo o con papa."
             data-precio="$22.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Desgranado Pollo</h3>
-              <p>Pechuga a la plancha, maiz tierno, queso mozzarella fundido, salsas y papa ripio. Pidelo con bollo o
+              <p>Pechuga a la plancha, maíz tierno, queso mozzarella fundido, salsas y papa ripio. Pidelo con bollo o
                 con papa.</p>
               <div class="producto-footer">
                 <span>$22.000</span>
@@ -1537,12 +1339,12 @@
           </article>
 
           <article class="producto" data-nombre="Nachos Foons"
-            data-descripcion="Nachos crocantes acompanados de queso mozzarella, pollo, maiz, pico de gallo, salsa de la casa y guacamole."
+            data-descripcion="Nachos crocantes acompañados de queso mozzarella, pollo, maíz, pico de gallo, salsa de la casa y guacamole."
             data-precio="$22.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Nachos Foons</h3>
-              <p>Nachos crocantes acompanados de queso mozzarella, pollo, maiz, pico de gallo, salsa de la casa y
+              <p>Nachos crocantes acompañados de queso mozzarella, pollo, maíz, pico de gallo, salsa de la casa y
                 guacamole.</p>
               <div class="producto-footer">
                 <span>$22.000</span>
@@ -1552,13 +1354,13 @@
           </article>
 
           <article class="producto" data-nombre="Burritos"
-            data-descripcion="Proteina a elegir (carne, pollo o cerdo), salteada con cebolla, queso mozzarella y salsa BBQ. Acompanado de papas cascos."
+            data-descripcion="Proteina a elegir (carne, pollo o cerdo), salteada con cebolla, queso mozzarella y salsa BBQ. acompañado de papas cascos."
             data-precio="$20.000" data-imagen="">
             <div class="producto-imagen sin-imagen"></div>
             <div class="producto-info">
               <h3>Burritos</h3>
               <p>Proteina a elegir (carne, pollo o cerdo), salteada con cebolla, queso mozzarella y salsa BBQ.
-                Acompanado de papas cascos.</p>
+                acompañado de papas cascos.</p>
               <div class="producto-footer">
                 <span>$20.000</span>
                 <button class="boton boton--pequeno boton-ver" type="button">Ver</button>
@@ -2004,7 +1806,7 @@
     </div>
   </footer>
 
-  <script src="./foons-restaurante.js"></script>
+  <script src="/foons_carbon/foons-carbon.js"></script>
 </body>
 
 </html>
