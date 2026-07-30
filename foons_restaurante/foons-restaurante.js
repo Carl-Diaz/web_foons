@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mapaToppings = {
     hamburguesas: 'toppings-burger',
     salchipapas: 'topings-salchipapa',
+    pizzas: 'toppings-pizzas'
   };
 
   const alternarNavegacion = () => {
