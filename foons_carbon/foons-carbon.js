@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const mensaje = `Hola Foons Al Carbón, quiero hacer un pedido.%0A%0ANombre: ${encodeURIComponent(nombre)}%0ATeléfono: ${encodeURIComponent(telefono)}%0ADirección: ${encodeURIComponent(direccion)}%0APago: ${encodeURIComponent(pago)}%0APedido: ${encodeURIComponent(pedido)}`;
-    window.open(`https://wa.me/573225234154?text=${mensaje}`, '_blank', 'noopener');
+    window.open(`https://wa.me/573216761018?text=${mensaje}`, '_blank', 'noopener');
     nota.textContent = 'Se abrió tu pedido en WhatsApp.';
   });
 

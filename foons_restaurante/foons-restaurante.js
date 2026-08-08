@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
       };
       ventanaImagen.appendChild(img);
     } else {
-      ventanaImagen.innerHTML = '<span style="font-size: 2.2rem;">🍽️</span>';
+      ventanaImagen.innerHTML = `<span style="font-size: 2.2rem;">🍽️</span>`;
     }
 
     const grupoProducto = producto.closest('.grupo');
